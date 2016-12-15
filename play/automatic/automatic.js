@@ -88,8 +88,8 @@ function Draggable(x,y){
 		for(var i=0;i<draggables.length;i++){
 			var d = draggables[i];
 			if(d==self) continue;
-			var dx = d.x-potentialX;
-			var dy = d.y-potentialY;
+			var dx = d.gotoX-potentialX;
+			var dy = d.gotoY-potentialY;
 			if(dx*dx+dy*dy<10){
 				spotTaken=true;
 				break;
