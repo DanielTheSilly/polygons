@@ -169,8 +169,8 @@ function Draggable(x,y){
 		lastPressed = Mouse.pressed;
 
 		// Going to where you should
-		self.x = self.x*0.5 + self.gotoX*0.5;
-		self.y = self.y*0.5 + self.gotoY*0.5;
+		if(self.x != self.gotoX) self.x = self.x*0.5 + self.gotoX*0.5;
+		if(self.y != self.gotoY) self.y = self.y*0.5 + self.gotoY*0.5;
 
 	};
 
